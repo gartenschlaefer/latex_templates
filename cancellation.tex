@@ -18,6 +18,12 @@
 % skip intend
 \usepackage{parskip}
 
+% graphics
+\usepackage{graphicx}
+
+% float barrier
+\usepackage{placeins}
+
 % --
 % macros
 
@@ -53,5 +59,11 @@ Recipient
 Sehr geehrte Damen und Herren,\\\\
 Text
 
-Mit freundlichen Grüßen,\\\\ Christian Walter
+Mit freundlichen Grüßen,
+\begin{figure}[!ht]
+  \includegraphics[width=0.25\textwidth]{./ignore/signature.jpg}
+\end{figure}
+\FloatBarrier
+\vspace{-0.5cm}
+Christian Walter
 \end{document}
